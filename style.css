@@ -1,0 +1,136 @@
+/* Colors */
+:root {
+    --primary-color: #3498db; /* Robotic Blue */
+    --secondary-color: #2ecc71; /* Tech Green */
+    --background-color: #f7f7f7; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --accent-color: #9b59b6; /* Deep Purple */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  min-width: 250px; /* Increased width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #666; /* Dark Gray */
+  transition: color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  color: var(--primary-color); /* Changed text color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome, .benefits, .testimonials {
+    background-color: var(--background-color);
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.call-to-action {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.call-to-action button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.call-to-action button:hover {
+    background-color: var(--accent-color);
+}
+
+blockquote {
+    font-style: italic;
+    color: #666;
+    padding: 10px;
+    border-left: 2px solid var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    color: #fff;
+}
